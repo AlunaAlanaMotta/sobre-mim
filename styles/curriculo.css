@@ -1,0 +1,297 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Sergoe UI", ;
+}
+
+:root {
+	--cor-neom: #93F205;
+	--cor-roxa: #6805f2;
+	--cor-branca: white;
+	--cor-preta: black;
+}
+
+body {
+	background: rgb(224, 240, 224);
+    /* background-color: var(--cor-roxa); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	margin: 50px;
+	background: var(--cor-preta);
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	box-shadow: 0 35px 55px rgb(67, 67, 67);
+}
+
+.textoProfile {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid var(--cor-preta);
+}
+
+.textoProfile .imgBx{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.textoProfile .imgBx img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.textoProfile h2 {
+	color: var(--cor-preta);
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4em;
+}
+
+.textoProfile h2 span {
+	font-size: 0.8em;
+	font-weight: 300;
+    color: var(--cor-roxa);
+}
+
+.infoContato {
+	padding-top: 30px;
+}
+
+.titulo {
+	color: var(--cor-roxa);
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+
+.infoContato ul {
+	position: relative;
+}
+
+.infoContato ul li {
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.infoContato ul li .icone {
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: var(--cor-roxa);
+}
+
+.infoContato ul li span {
+	color: var(--cor-preta);
+	font-weight: 500;
+}
+
+
+.infoContato.Educação li{
+	margin-bottom: 15px;
+	list-style: none;
+}
+
+.infoContato.Educação h5{
+	color: var(--cor-roxa);
+	font-weight: 700;
+}
+
+.infoContato.Educação h4 {
+	color: var(--cor-preta);
+	font-weight: 300;
+}
+
+.infoContato.Educação h4:nht-child(2){
+	color: var(--cor-preta);
+	font-weight: 500;
+}
+
+.infoContato.Idiomas .percentual{
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: var(--cor-roxa);
+	display: block;
+	margin-top: 5px;
+}
+
+.infoContato.Idiomas ul li span{
+	color: var(--cor-neom);
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.percentual{
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: var(--cor-preta);
+	display: block;
+	margin-top: 5px;
+}
+
+.percentual div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background:var(--cor-roxa);
+	width: 40%;
+}
+
+.container .esquerda {
+	position: relative;
+	background: var(--cor-neom);
+	padding: 40px;
+}
+
+.container .direita {
+	position: relative;
+	background: var(--cor-preta);
+	padding: 40px;
+}
+
+.sobre {
+	margin-bottom: 50px;
+}
+
+.titulo2 {
+	color: var(--cor-neom);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+p {
+	color: var(--cor-branca);
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.sobre .caixa{
+	flex-direction: row;
+	margin: 20px 0;
+}
+
+.sobre .caixa .anoCompanhia{
+	min-width: 180px;
+}
+
+.sobre .caixa .anoCompanhia h5{
+	text-transform: uppercase;
+	color: var(--cor-roxa);
+	font-weight: 600;
+}
+
+.sobre .caixa .texto h4{
+	text-transform: uppercase;
+	color: var(--cor-neom);
+	font-size: 16px;
+}
+
+.habilidades .caixa {
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	align-items: center;
+}
+
+.habilidades .caixa h4{
+	text-transform: uppercase;
+	color: var(--cor-roxa);
+	font-weight: 500;
+}
+
+.habilidades .caixa .percentual{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background: var(--cor-roxa);
+}
+
+.habilidades .caixa .percentual div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 10px;
+	background: var(--cor-neom);
+}
+
+.interesses ul {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.interesses ul li{
+	list-style: none;
+	color: var(--cor-roxa);
+	font-weight: 500;
+	margin: 10px 0;
+}
+
+.interesses ul ui span .icone{
+	color: 52b377;
+	font-size: 18px;
+	width: 22px;
+}
+
+
+
+
+@media(max-width: 1000px){
+	.container{
+		margin: 10px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.interesses ul{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
+
+@media(max-width:600px){
+	.sobre .caixa{
+		flex-direction: column;
+	}
+	.sobre .caixa .anoCompanhia{
+		margin-bottom: 10px;
+	}
+	.interesses ul {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.habilidades .caixa{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
