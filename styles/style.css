@@ -58,13 +58,13 @@ body{
     padding: 5% 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .apresentacao__conteudo{
-    width: 50%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    line-height: 2.5em;
 }
 
 .apresentacao__conteudo__titulo{
@@ -114,6 +114,20 @@ body{
 
 .apresentacao__imagem {
     width: 50%;
+}
+
+.apresentacao__familia {
+    padding: 5% 15%;
+    align-items: center;
+}
+
+.apresentacao__familia h1 {
+    margin-bottom: 15%;
+}
+
+.imagem_familia {
+    display: flex;
+    width: 80%;
 }
 
 .rodape {
