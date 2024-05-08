@@ -295,3 +295,13 @@ p {
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
+
+
+.curriculo_pdf p {
+    color: #2A7AE4;
+    padding-top: 5%;
+}
+
+.curriculo_pdf a {
+	color: #2A7AE4;
+}
